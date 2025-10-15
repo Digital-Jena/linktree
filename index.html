@@ -10,9 +10,15 @@
             box-sizing: border-box;
         }
         
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
         .gradient-bg {
             background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
-            min-height: 100%;
+            height: 100%;
         }
         
         .profile-glow {
@@ -67,13 +73,13 @@
     </style>
 </head>
 <body class="gradient-bg text-white font-sans">
-    <div class="min-h-full flex flex-col items-center justify-center px-6 py-12">
+    <div class="h-full flex flex-col items-center justify-center px-6">
         <!-- Profile Section -->
         <div class="text-center mb-12 floating-animation">
             <!-- Profile Image Container -->
-<div class="profile-container w-32 h-32 mx-auto mb-6 rounded-full profile-glow overflow-hidden bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
-  <img src="/IMG_0094.heic" 
-                    
+            <div class="profile-container w-40 h-40 mx-auto mb-6 rounded-full profile-glow overflow-hidden bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
+                <!-- Replace YOUR_IMAGE_URL_HERE with your actual hosted image URL -->
+                <img src="/IMG_0094.heic" 
                      alt="Julius Bruch Profile Photo" 
                      class="w-full h-full object-cover absolute inset-0"
                      onerror="this.style.display='none';">
@@ -118,5 +124,5 @@
             </a>
         </div>
     </div>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98efa237e546761f',t:'MTc2MDUzNDYzNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98efad4320c8761f',t:'MTc2MDUzNTA4Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
