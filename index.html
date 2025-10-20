@@ -77,10 +77,18 @@
         <!-- Profile Section -->
         <div class="text-center mb-12 floating-animation">
             <!-- Profile Image Container -->
-           <div class="profile-container w-40 h-40 mx-auto mb-6 rounded-full profile-glow overflow-hidden bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center relative">
-      <img src="/profile.webp" alt="Julius Bruch Profile Photo" width="160" height="160" loading="lazy" class="w-full h-full object-cover absolute inset-0 transition-opacity duration-500 opacity-0" onload="this.style.opacity='1'">
-      <svg class="w-16 h-16 text-white absolute" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-    </div>
+            <div class="profile-container w-40 h-40 mx-auto mb-6 rounded-full profile-glow overflow-hidden bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
+                <!-- Replace YOUR_IMAGE_URL_HERE with your actual hosted image URL -->
+                <img src="/profile.webp" 
+                     alt="Julius Bruch Profile Photo" 
+                     class="w-full h-full object-cover absolute inset-0"
+                     onerror="this.style.display='none';">
+                <!-- Fallback SVG icon (shows when no image or image fails) -->
+                <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+            </div>
+            
             <!-- Name and Tagline -->
             <h1 class="text-4xl font-bold mb-3 text-glow">Julius Bruch</h1>
             <p class="text-lg text-gray-300 font-light">Check out my socials</p>
@@ -103,7 +111,7 @@
             <a href="https://open.spotify.com/user/julius11010" target="_blank" rel="noopener noreferrer"
                class="link-button spotify-hover w-full bg-gray-800 bg-opacity-50 rounded-2xl p-6 flex items-center justify-center text-white no-underline">
                 <div class="flex items-center justify-center space-x-4">
-                    <svg class="w-8 h-8 text-green-500 flex-shrink-0 -ml-3" fill="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-8 h-8 text-green-500 flex-shrink-0 -ml-4" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
                     </svg>
                     <span class="text-xl font-semibold">Spotify</span>
@@ -122,5 +130,5 @@
             </a>
         </div>
     </div>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98efb89b21cd761f',t:'MTc2MDUzNTU1MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'991b3de771775d40',t:'MTc2MDk5MTg5OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
