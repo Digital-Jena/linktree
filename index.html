@@ -19,192 +19,89 @@
         }
         
         .gradient-bg {
-            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            background: linear-gradient(135deg, #4a4a4a 0%, #6b5b4f 50%, #5a4a3a 100%);
             min-height: 100%;
             position: relative;
             overflow: hidden;
         }
         
-        .dynamic-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 20% 80%, rgba(255, 165, 0, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255, 140, 0, 0.25) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(255, 69, 0, 0.2) 0%, transparent 50%);
-            animation: morphing 40s linear infinite;
-        }
-        
-        .dynamic-bg2 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 70% 30%, rgba(255, 140, 0, 0.2) 0%, transparent 60%),
-                radial-gradient(circle at 30% 70%, rgba(255, 69, 0, 0.15) 0%, transparent 60%);
-            animation: morphing2 45s linear infinite;
-        }
-        
-        .floating-orbs {
+        .floating-bg-elements {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             pointer-events: none;
+            z-index: 1;
         }
         
-        .orb {
+        .floating-orb {
             position: absolute;
+            background: radial-gradient(circle, rgba(255, 165, 0, 0.15) 0%, rgba(255, 140, 0, 0.08) 50%, transparent 100%);
             border-radius: 50%;
             filter: blur(1px);
-            animation: float-orb 35s linear infinite;
+            animation: gentle-float 12s ease-in-out infinite;
         }
         
         .orb1 {
-            width: 200px;
-            height: 200px;
-            background: radial-gradient(circle, rgba(255, 165, 0, 0.15) 0%, transparent 70%);
-            top: 10%;
-            left: 10%;
+            width: 60px;
+            height: 60px;
+            top: 15%;
+            left: 20%;
             animation-delay: 0s;
         }
         
         .orb2 {
-            width: 150px;
-            height: 150px;
-            background: radial-gradient(circle, rgba(255, 140, 0, 0.12) 0%, transparent 70%);
-            top: 60%;
-            right: 15%;
-            animation-delay: -5s;
+            width: 40px;
+            height: 40px;
+            top: 70%;
+            right: 25%;
+            animation-delay: -4s;
         }
         
         .orb3 {
-            width: 100px;
-            height: 100px;
-            background: radial-gradient(circle, rgba(255, 69, 0, 0.1) 0%, transparent 70%);
+            width: 50px;
+            height: 50px;
             bottom: 20%;
-            left: 20%;
-            animation-delay: -10s;
+            left: 15%;
+            animation-delay: -8s;
         }
         
-        @keyframes morphing {
-            0% {
-                background: 
-                    radial-gradient(circle at 20% 80%, rgba(255, 165, 0, 0.3) 0%, transparent 50%),
-                    radial-gradient(circle at 80% 20%, rgba(255, 140, 0, 0.25) 0%, transparent 50%),
-                    radial-gradient(circle at 40% 40%, rgba(255, 69, 0, 0.2) 0%, transparent 50%);
+        .orb4 {
+            width: 35px;
+            height: 35px;
+            top: 40%;
+            right: 15%;
+            animation-delay: -2s;
+        }
+        
+        .orb5 {
+            width: 45px;
+            height: 45px;
+            top: 25%;
+            left: 60%;
+            animation-delay: -6s;
+        }
+        
+        @keyframes gentle-float {
+            0%, 100% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.3;
             }
-            16.66% {
-                background: 
-                    radial-gradient(circle at 35% 65%, rgba(255, 140, 0, 0.28) 0%, transparent 50%),
-                    radial-gradient(circle at 75% 35%, rgba(255, 165, 0, 0.32) 0%, transparent 50%),
-                    radial-gradient(circle at 55% 25%, rgba(255, 69, 0, 0.22) 0%, transparent 50%);
-            }
-            33.33% {
-                background: 
-                    radial-gradient(circle at 60% 30%, rgba(255, 165, 0, 0.35) 0%, transparent 50%),
-                    radial-gradient(circle at 30% 70%, rgba(255, 140, 0, 0.3) 0%, transparent 50%),
-                    radial-gradient(circle at 70% 60%, rgba(255, 69, 0, 0.25) 0%, transparent 50%);
+            25% {
+                transform: translate(10px, -15px) scale(1.1);
+                opacity: 0.5;
             }
             50% {
-                background: 
-                    radial-gradient(circle at 80% 60%, rgba(255, 140, 0, 0.27) 0%, transparent 50%),
-                    radial-gradient(circle at 25% 45%, rgba(255, 69, 0, 0.24) 0%, transparent 50%),
-                    radial-gradient(circle at 50% 80%, rgba(255, 165, 0, 0.31) 0%, transparent 50%);
+                transform: translate(-5px, 10px) scale(0.9);
+                opacity: 0.2;
             }
-            66.66% {
-                background: 
-                    radial-gradient(circle at 45% 25%, rgba(255, 69, 0, 0.26) 0%, transparent 50%),
-                    radial-gradient(circle at 75% 75%, rgba(255, 165, 0, 0.29) 0%, transparent 50%),
-                    radial-gradient(circle at 25% 55%, rgba(255, 140, 0, 0.33) 0%, transparent 50%);
-            }
-            83.33% {
-                background: 
-                    radial-gradient(circle at 65% 85%, rgba(255, 140, 0, 0.31) 0%, transparent 50%),
-                    radial-gradient(circle at 15% 25%, rgba(255, 165, 0, 0.27) 0%, transparent 50%),
-                    radial-gradient(circle at 85% 45%, rgba(255, 69, 0, 0.23) 0%, transparent 50%);
-            }
-            100% {
-                background: 
-                    radial-gradient(circle at 20% 80%, rgba(255, 165, 0, 0.3) 0%, transparent 50%),
-                    radial-gradient(circle at 80% 20%, rgba(255, 140, 0, 0.25) 0%, transparent 50%),
-                    radial-gradient(circle at 40% 40%, rgba(255, 69, 0, 0.2) 0%, transparent 50%);
+            75% {
+                transform: translate(15px, 5px) scale(1.05);
+                opacity: 0.4;
             }
         }
-        
-        @keyframes morphing2 {
-            0% {
-                background: 
-                    radial-gradient(circle at 70% 30%, rgba(255, 140, 0, 0.2) 0%, transparent 60%),
-                    radial-gradient(circle at 30% 70%, rgba(255, 69, 0, 0.15) 0%, transparent 60%);
-            }
-            20% {
-                background: 
-                    radial-gradient(circle at 85% 55%, rgba(255, 69, 0, 0.18) 0%, transparent 60%),
-                    radial-gradient(circle at 15% 45%, rgba(255, 140, 0, 0.22) 0%, transparent 60%);
-            }
-            40% {
-                background: 
-                    radial-gradient(circle at 50% 85%, rgba(255, 140, 0, 0.19) 0%, transparent 60%),
-                    radial-gradient(circle at 60% 15%, rgba(255, 69, 0, 0.17) 0%, transparent 60%);
-            }
-            60% {
-                background: 
-                    radial-gradient(circle at 25% 25%, rgba(255, 69, 0, 0.21) 0%, transparent 60%),
-                    radial-gradient(circle at 75% 85%, rgba(255, 140, 0, 0.16) 0%, transparent 60%);
-            }
-            80% {
-                background: 
-                    radial-gradient(circle at 90% 75%, rgba(255, 140, 0, 0.23) 0%, transparent 60%),
-                    radial-gradient(circle at 10% 25%, rgba(255, 69, 0, 0.14) 0%, transparent 60%);
-            }
-            100% {
-                background: 
-                    radial-gradient(circle at 70% 30%, rgba(255, 140, 0, 0.2) 0%, transparent 60%),
-                    radial-gradient(circle at 30% 70%, rgba(255, 69, 0, 0.15) 0%, transparent 60%);
-            }
-        }
-        
-        @keyframes float-orb {
-            0% {
-                transform: translate(0, 0) scale(1);
-                opacity: 0.7;
-            }
-            14.28% {
-                transform: translate(15px, -10px) scale(1.02);
-                opacity: 0.75;
-            }
-            28.57% {
-                transform: translate(25px, -15px) scale(1.05);
-                opacity: 0.8;
-            }
-            42.85% {
-                transform: translate(30px, -20px) scale(1.1);
-                opacity: 0.9;
-            }
-            57.14% {
-                transform: translate(10px, 5px) scale(1.03);
-                opacity: 0.75;
-            }
-            71.42% {
-                transform: translate(-15px, 20px) scale(0.95);
-                opacity: 0.65;
-            }
-            85.71% {
-                transform: translate(5px, 8px) scale(1.02);
-                opacity: 0.8;
-            }
-            100% {
-                transform: translate(0, 0) scale(1);
-                opacity: 0.7;
-            }
-        }
+
         
         .profile-glow {
             box-shadow: 0 0 30px rgba(34, 197, 94, 0.4);
@@ -267,15 +164,16 @@
     </style>
 </head>
 <body class="gradient-bg text-white font-sans">
-    <div class="min-h-full flex flex-col items-center justify-center px-6 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <!-- Dynamic Background Effects -->
-        <div class="dynamic-bg"></div>
-        <div class="dynamic-bg2"></div>
-        <div class="floating-orbs">
-            <div class="orb orb1"></div>
-            <div class="orb orb2"></div>
-            <div class="orb orb3"></div>
+    <div class="min-h-full flex flex-col items-center justify-center px-6">
+        <!-- Floating Background Elements -->
+        <div class="floating-bg-elements">
+            <div class="floating-orb orb1"></div>
+            <div class="floating-orb orb2"></div>
+            <div class="floating-orb orb3"></div>
+            <div class="floating-orb orb4"></div>
+            <div class="floating-orb orb5"></div>
         </div>
+
         <!-- Profile Section -->
         <div class="text-center mb-6 relative z-10">
             <!-- Profile Image Container -->
@@ -385,5 +283,5 @@
             }
         }
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9920dd07670a6a75',t:'MTc2MTA1MDg0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9921deb452c76a75',t:'MTc2MTA2MTM5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
