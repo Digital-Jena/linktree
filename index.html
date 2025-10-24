@@ -18,34 +18,11 @@
             padding: 0;
         }
         
-        .video-bg {
+        .gradient-bg {
+            background: linear-gradient(135deg, #6B6B6B 0%, #8B7355 25%, #7A6B5D 50%, #6D5A47 75%, #5D4E42 100%);
             min-height: 100%;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(135deg, #6B6B6B 0%, #8B7355 25%, #7A6B5D 50%, #6D5A47 75%, #5D4E42 100%);
-        }
-        
-        .background-video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
-            z-index: 1;
-        }
-        
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: 2;
         }
 
         
@@ -109,18 +86,8 @@
         }
     </style>
 </head>
-<body class="video-bg text-white font-sans">
-    <!-- Background Video -->
-    <video class="background-video" autoplay muted loop playsinline>
-        <source src="/media/background.webm" type="video/webm">
-        <!-- Fallback for browsers that don't support WebM -->
-        <source src="/media/background.mp4" type="video/mp4">
-    </video>
-    
-    <!-- Video Overlay for better text readability -->
-    <div class="video-overlay"></div>
-    
-    <div class="min-h-full flex flex-col items-center justify-center px-6 relative z-10">
+<body class="gradient-bg text-white font-sans">
+    <div class="min-h-full flex flex-col items-center justify-center px-6">
 
 
         <!-- Profile Section -->
@@ -232,5 +199,5 @@
             }
         }
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9938a111171ef56c',t:'MTc2MTMwMDA0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9938ac32b563f56c',t:'MTc2MTMwMDUwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
