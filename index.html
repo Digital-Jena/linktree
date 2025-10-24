@@ -22,26 +22,30 @@
             min-height: 100%;
             position: relative;
             overflow: hidden;
+            background: linear-gradient(135deg, #6B6B6B 0%, #8B7355 25%, #7A6B5D 50%, #6D5A47 75%, #5D4E42 100%);
         }
         
         .background-video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
             object-fit: cover;
-            z-index: -2;
+            z-index: 1;
         }
         
         .video-overlay {
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.4);
-            z-index: -1;
+            z-index: 2;
         }
 
         
@@ -116,11 +120,11 @@
     <!-- Video Overlay for better text readability -->
     <div class="video-overlay"></div>
     
-    <div class="min-h-full flex flex-col items-center justify-center px-6">
+    <div class="min-h-full flex flex-col items-center justify-center px-6 relative z-10">
 
 
         <!-- Profile Section -->
-        <div class="text-center mb-6 relative z-10">
+        <div class="text-center mb-6 relative">
             <!-- Profile Image Container -->
             <div class="profile-container w-36 h-36 mx-auto mb-4 rounded-full profile-glow overflow-hidden bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
                 <!-- Replace YOUR_IMAGE_URL_HERE with your actual hosted image URL -->
@@ -140,7 +144,7 @@
         </div>
         
         <!-- Links Section -->
-        <div class="w-full max-w-md space-y-4 mb-6 relative z-10">
+        <div class="w-full max-w-md space-y-4 mb-6 relative">
             <!-- YouTube Button -->
             <a href="https://youtube.com/@juliusbr39" target="_blank" rel="noopener noreferrer" 
                class="link-button youtube-hover w-full bg-gray-800 bg-opacity-50 rounded-xl p-5 flex items-center justify-center text-white no-underline"
@@ -188,7 +192,7 @@
         </div>
         
         <!-- Promotional Links Section -->
-        <div class="w-full max-w-sm text-center relative z-10">
+        <div class="w-full max-w-sm text-center relative">
             <div class="text-xs text-gray-400 uppercase tracking-wide mb-2">Support me using my referral link :)</div>
             
             <!-- GRIN Promo -->
@@ -228,5 +232,5 @@
             }
         }
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9938942d33c9f56c',t:'MTc2MTI5OTUxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9938a111171ef56c',t:'MTc2MTMwMDA0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
