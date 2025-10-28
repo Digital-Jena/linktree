@@ -4,99 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Julius Bruch - Links</title>
-
-  <!-- Local Font -->
-  <style>
-    @font-face {
-      font-family: 'Orbitron';
-      src: url('/fonts/orbitron.woff2') format('woff2');
-      font-weight: 400 900;
-      font-display: swap;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      font-family: 'Orbitron', sans-serif;
-      color: #fff;
-      background: linear-gradient(135deg, #4A4A4A 0%, #6B5A42 25%, #5A4B41 50%, #4D3A2F 75%, #3D2E26 100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 0 30px rgba(34, 197, 94, 0.4);
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin: 1rem 0 0.3rem;
-      text-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
-      text-transform: uppercase;
-    }
-
-    p {
-      color: #ddd;
-      letter-spacing: 1px;
-      font-size: 1rem;
-      text-transform: uppercase;
-    }
-
-    .links {
-      width: 90%;
-      max-width: 350px;
-      margin-top: 2rem;
-    }
-
-    .link-button {
-      display: block;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 12px;
-      padding: 14px;
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-      margin: 10px 0;
-      transition: all 0.3s ease;
-    }
-
-    .link-button:hover {
-      transform: translateY(-2px);
-      background: rgba(255,255,255,0.2);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-    }
-
-    footer {
-      margin-top: 2rem;
-      font-size: 0.7rem;
-      color: #aaa;
-    }
-  </style>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
   <!-- Profile -->
   <img src="/media/profile.webp" alt="Julius Bruch Profile Photo" onerror="this.style.display='none'">
-  <h1><a href="https://instagram.com/deinjuliii" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Julius Bruch</a></h1>
+  
+  <h1>
+    <a href="https://instagram.com/deinjuliii" target="_blank" rel="noopener noreferrer" class="ig-link">
+      Julius Bruch
+      <svg class="ig-icon" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 
+                 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07
+                 -3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92
+                 -.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849
+                 .149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 
+                 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072
+                 -4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 
+                 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 
+                 6.78 6.98 6.98 1.281.058 1.689.072 
+                 4.948.072 3.259 0 3.668-.014 
+                 4.948-.072 4.354-.2 6.782-2.618 
+                 6.979-6.98.059-1.28.073-1.689.073-4.948 
+                 0-3.259-.014-3.667-.072-4.947
+                 -.196-4.354-2.617-6.78-6.979-6.98
+                 -1.281-.059-1.69-.073-4.949-.073zm0 
+                 5.838c-3.403 0-6.162 2.759-6.162 
+                 6.162s2.759 6.163 6.162 6.163 
+                 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 
+                 10.162c-2.209 0-4-1.79-4-4 0-2.209 
+                 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 
+                 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 
+                 1.44s.645 1.44 1.441 1.44c.795 0 
+                 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+    </a>
+  </h1>
+  
   <p>music • travel • vibz</p>
 
   <!-- Links -->
   <div class="links">
-    <a class="link-button" href="https://youtube.com/@juliusbr39" target="_blank" rel="noopener noreferrer">YouTube</a>
-    <a class="link-button" href="https://open.spotify.com/user/julius11010" target="_blank" rel="noopener noreferrer">Spotify</a>
-    <a class="link-button" href="https://www.linkedin.com/in/julius-bruch-054296294" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="link-button youtube" href="https://youtube.com/@juliusbr39" target="_blank" rel="noopener noreferrer">
+      <svg fill="#FF0000" viewBox="0 0 24 24">
+        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+      </svg>
+      YouTube
+    </a>
+
+    <a class="link-button spotify" href="https://open.spotify.com/user/julius11010" target="_blank" rel="noopener noreferrer">
+      <svg fill="#1ED760" viewBox="0 0 24 24">
+        <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
+      </svg>
+      Spotify
+    </a>
+
+    <a class="link-button linkedin" href="https://www.linkedin.com/in/julius-bruch-054296294" target="_blank" rel="noopener noreferrer">
+      <svg fill="#0077B5" viewBox="0 0 24 24">
+        <path d="M22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0zM7.06 20.45H3.56V9h3.5v11.45zM5.31 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm15.14 13.02h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67h-3.55V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28z"/>
+      </svg>
+      LinkedIn
+    </a>
   </div>
 
-  <footer>© 2025 Julius Bruch – Private Website. No cookies. No tracking.</footer>
+  <footer>
+    © 2025 Julius Bruch – Private Website. No cookies. No tracking.<br>
+    <span class="privacy">This site does not collect or process personal data. Hosted privately for personal use only.</span>
+  </footer>
 
 </body>
 </html>
