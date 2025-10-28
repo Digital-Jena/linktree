@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/fonts/orbitron.woff2') format('woff2');
+  font-weight: 400 900;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #4A4A4A 0%, #6B5A42 25%, #5A4B41 50%, #4D3A2F 75%, #3D2E26 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 30px rgba(34, 197, 94, 0.4);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 0.3rem;
+  text-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ig-link {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.ig-link:hover {
+  color: #b9ffca;
+}
+
+.ig-icon {
+  width: 26px;
+  height: 26px;
+  filter: drop-shadow(0 0 6px rgba(34, 197, 94, 0.6));
+}
+
+p {
+  color: #ddd;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.links {
+  width: 90%;
+  max-width: 350px;
+  margin-top: 2rem;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  padding: 14px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.youtube:hover {
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.25), rgba(128, 128, 128, 0.4));
+  border-color: rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.spotify:hover {
+  background: linear-gradient(135deg, rgba(30, 215, 96, 0.25), rgba(128, 128, 128, 0.4));
+  border-color: rgba(30, 215, 96, 0.3);
+  box-shadow: 0 0 20px rgba(30, 215, 96, 0.3);
+}
+
+.linkedin:hover {
+  background: linear-gradient(135deg, rgba(0, 119, 181, 0.25), rgba(128, 128, 128, 0.4));
+  border-color: rgba(0, 119, 181, 0.3);
+  box-shadow: 0 0 20px rgba(0, 119, 181, 0.3);
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  color: #aaa;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.privacy {
+  display: block;
+  color: #888;
+  font-size: 0.65rem;
+  margin-top: 0.3rem;
+}
